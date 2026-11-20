@@ -1,0 +1,42 @@
+<div class="product-card">
+  <a href="{{ product.url }}" class="product-thumb">
+    {% if product.featured_media %}
+      <img
+        src="{{ product.featured_media | image_url: width: 600 }}"
+        alt="{{ product.title | escape }}"
+        loading="lazy"
+        width="600"
+        height="375"
+      >
+    {% else %}
+      <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: #ECE7DD; color: #6C6F72; font-size: 0.85rem;">
+        No image available
+      </div>
+    {% endif %}
+
+    {% for tag in product.tags %}
+      {% if tag contains 'Unused' or tag contains 'Discontinued' or tag contains 'surplus' or tag contains 'packaging' or tag contains 'Used' %}
+        <span class="condition-pill">{{ tag }}</span>
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  </a>
+
+  <div class="product-body">
+    <div class="product-meta">
+      {% if product.type != blank %}{{ product.type }}{% else %}Deadstock{% endif %}
+      {% if product.vendor != blank %} &middot; {{ product.vendor }}{% endif %}
+    </div>
+
+    <a href="{{ product.url }}">
+      <h3 class="product-title">{{ product.title }}</h3>
+    </a>
+
+    <div class="product-price-row">
+      <span class="price-current">{{ product.price | money }}</span>
+      {% if product.compare_at_price > product.price %}
+        <span class="price-mrp">{{ product.compare_at_price | money }}</span>
+      {% endif %}
+    </div>
+  </div>
+</div>

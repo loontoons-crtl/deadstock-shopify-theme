@@ -1,0 +1,31 @@
+<section class="container">
+  <div class="hero-section">
+    <img
+      src="{{ 'exterior-1920.webp' | asset_url }}"
+      alt="Architecture in Bengaluru"
+      class="hero-image"
+      loading="eager"
+      width="1920"
+      height="1080"
+    >
+    <div class="hero-gradient"></div>
+    <div class="hero-content">
+      <span class="hero-eyebrow">Bengaluru Deadstock Marketplace</span>
+      <h1 class="hero-title">Commercial surplus &amp; deadstock materials</h1>
+      <p class="hero-subtitle">
+        Architectural finishes, tiles, veneers, bathroom fittings and stone from cancelled projects, showroom overstock, and discontinued lines across Bengaluru.
+      </p>
+      <a href="{{ routes.all_products_collection_url }}" class="btn-primary">
+        Browse live inventory
+        {% render 'icon-arrow-right' %}
+      </a>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Hero Banner",
+  "settings": []
+}
+{% endschema %}

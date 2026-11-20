@@ -1,0 +1,68 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Deadstock Bengaluru",
+    "theme_version": "1.0.0",
+    "theme_author": "Tanmay",
+    "theme_documentation_url": "https://github.com/loontoons-crtl/marketplace-deadstock",
+    "theme_support_url": "https://github.com/loontoons-crtl/marketplace-deadstock"
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "color",
+        "id": "color_bg",
+        "label": "Background (Paper)",
+        "default": "#F6F4EF"
+      },
+      {
+        "type": "color",
+        "id": "color_text",
+        "label": "Text (Ink)",
+        "default": "#26282B"
+      },
+      {
+        "type": "color",
+        "id": "color_primary",
+        "label": "Primary Accent (Forest Green)",
+        "default": "#2F4A3A"
+      },
+      {
+        "type": "color",
+        "id": "color_olive",
+        "label": "Olive Accent",
+        "default": "#6B7A55"
+      },
+      {
+        "type": "color",
+        "id": "color_sand",
+        "label": "Sand Surface",
+        "default": "#ECE7DD"
+      },
+      {
+        "type": "color",
+        "id": "color_border",
+        "label": "Line / Border",
+        "default": "#E3DFD6"
+      }
+    ]
+  },
+  {
+    "name": "Store Details",
+    "settings": [
+      {
+        "type": "text",
+        "id": "city_name",
+        "label": "Marketplace City",
+        "default": "Bengaluru"
+      },
+      {
+        "type": "text",
+        "id": "tagline",
+        "label": "Tagline",
+        "default": "Commercial surplus & deadstock materials in Bengaluru"
+      }
+    ]
+  }
+]

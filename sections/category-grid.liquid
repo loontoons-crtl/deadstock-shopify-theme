@@ -1,0 +1,71 @@
+<section class="container" style="margin-top: 3.5rem;">
+  <div class="section-title-wrap">
+    <h2 class="section-title">Explore categories</h2>
+    <a href="{{ routes.collections_url }}" style="font-size: 0.85rem; font-weight: 600; color: var(--color-forest);">
+      All categories &rarr;
+    </a>
+  </div>
+
+  <div class="category-grid">
+    <a href="/collections/tiles" class="category-card">
+      <img src="{{ 'tiles.webp' | asset_url }}" alt="Tiles & Flooring" loading="lazy" width="400" height="300">
+      <div class="category-overlay"></div>
+      <div class="category-title">
+        <span>Tiles &amp; Flooring</span>
+        {% render 'icon-arrow-right' %}
+      </div>
+    </a>
+
+    <a href="/collections/laminates" class="category-card">
+      <img src="{{ 'laminates.webp' | asset_url }}" alt="Laminates" loading="lazy" width="400" height="300">
+      <div class="category-overlay"></div>
+      <div class="category-title">
+        <span>Laminates</span>
+        {% render 'icon-arrow-right' %}
+      </div>
+    </a>
+
+    <a href="/collections/sanitaryware" class="category-card">
+      <img src="{{ 'sanitaryware.webp' | asset_url }}" alt="Sanitaryware" loading="lazy" width="400" height="300">
+      <div class="category-overlay"></div>
+      <div class="category-title">
+        <span>Sanitaryware</span>
+        {% render 'icon-arrow-right' %}
+      </div>
+    </a>
+
+    <a href="/collections/stone" class="category-card">
+      <img src="{{ 'stone.webp' | asset_url }}" alt="Natural Stone" loading="lazy" width="400" height="300">
+      <div class="category-overlay"></div>
+      <div class="category-title">
+        <span>Marble &amp; Granite</span>
+        {% render 'icon-arrow-right' %}
+      </div>
+    </a>
+
+    <a href="/collections/louvers" class="category-card">
+      <img src="{{ 'louvers.webp' | asset_url }}" alt="Louvers & Panels" loading="lazy" width="400" height="300">
+      <div class="category-overlay"></div>
+      <div class="category-title">
+        <span>Louvers &amp; Wall Panels</span>
+        {% render 'icon-arrow-right' %}
+      </div>
+    </a>
+
+    <a href="/collections/veneers" class="category-card">
+      <img src="{{ 'veneers.webp' | asset_url }}" alt="Veneers" loading="lazy" width="400" height="300">
+      <div class="category-overlay"></div>
+      <div class="category-title">
+        <span>Veneers &amp; Plywood</span>
+        {% render 'icon-arrow-right' %}
+      </div>
+    </a>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Category Grid",
+  "settings": []
+}
+{% endschema %}

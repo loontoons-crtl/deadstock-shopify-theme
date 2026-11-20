@@ -1,0 +1,26 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero-banner",
+      "settings": {}
+    },
+    "categories": {
+      "type": "category-grid",
+      "settings": {}
+    },
+    "featured": {
+      "type": "featured-deadstock",
+      "settings": {}
+    },
+    "values": {
+      "type": "value-props",
+      "settings": {}
+    }
+  },
+  "order": [
+    "hero",
+    "categories",
+    "featured",
+    "values"
+  ]
+}

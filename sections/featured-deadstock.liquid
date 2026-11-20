@@ -1,0 +1,30 @@
+<section class="container" style="margin-top: 1rem;">
+  <div class="section-title-wrap">
+    <div>
+      <h2 class="section-title">Fresh listings</h2>
+      <p style="font-size: 0.85rem; color: var(--color-muted); margin-top: 0.25rem;">
+        Direct surplus lots from Bengaluru sites and dealer warehouses
+      </p>
+    </div>
+    <a href="{{ routes.all_products_collection_url }}" style="font-size: 0.85rem; font-weight: 600; color: var(--color-forest);">
+      View all &rarr;
+    </a>
+  </div>
+
+  <div class="products-grid">
+    {% for product in collections.all.products limit: 8 %}
+      {% render 'product-card', product: product %}
+    {% else %}
+      <p style="grid-column: 1 / -1; color: var(--color-muted); padding: 2rem 0;">
+        Import your listings using <code>shopify-products-export.csv</code> in Shopify Admin &rarr; Products to populate this section.
+      </p>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Featured Deadstock",
+  "settings": []
+}
+{% endschema %}

@@ -1,0 +1,23 @@
+{
+  "general": {
+    "search": "Search",
+    "search_placeholder": "Search tiles, veneers, bathroom fixtures...",
+    "cart": "Cart",
+    "all_categories": "All Categories",
+    "view_all": "View all",
+    "browse_deadstock": "Browse Deadstock"
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "Add to Cart",
+      "sold_out": "Sold out",
+      "unavailable": "Unavailable",
+      "condition": "Condition",
+      "location": "Location",
+      "seller": "Seller Details",
+      "contact_seller": "Contact Seller",
+      "whatsapp": "Chat on WhatsApp",
+      "call": "Call Seller"
+    }
+  }
+}

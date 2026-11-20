@@ -1,0 +1,26 @@
+<div class="container" style="padding: 2.5rem 1.25rem;">
+  <div class="section-title-wrap">
+    <div>
+      <h1 class="section-title">{{ collection.title }}</h1>
+      {% if collection.description != blank %}
+        <p style="font-size: 0.9rem; color: var(--color-muted); margin-top: 0.25rem;">{{ collection.description }}</p>
+      {% endif %}
+    </div>
+    <span style="font-size: 0.85rem; color: var(--color-muted);">{{ collection.products_count }} listings</span>
+  </div>
+
+  <div class="products-grid">
+    {% for product in collection.products %}
+      {% render 'product-card', product: product %}
+    {% else %}
+      <p style="color: var(--color-muted); padding: 3rem 0; grid-column: 1 / -1;">No deadstock listings found in this category.</p>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Collection Page",
+  "settings": []
+}
+{% endschema %}

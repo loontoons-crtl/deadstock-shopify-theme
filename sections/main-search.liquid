@@ -1,0 +1,23 @@
+<div class="container" style="padding: 2.5rem 1.25rem;">
+  <div class="section-title-wrap">
+    <h1 class="section-title">Search: {{ search.terms }}</h1>
+    <span style="font-size: 0.85rem; color: var(--color-muted);">{{ search.results_count }} results</span>
+  </div>
+
+  <div class="products-grid">
+    {% for item in search.results %}
+      {% if item.object_type == 'product' %}
+        {% render 'product-card', product: item %}
+      {% endif %}
+    {% else %}
+      <p style="color: var(--color-muted); padding: 3rem 0; grid-column: 1 / -1;">No matching surplus materials found.</p>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Search Results",
+  "settings": []
+}
+{% endschema %}
